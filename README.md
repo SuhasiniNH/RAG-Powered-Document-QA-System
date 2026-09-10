@@ -10,6 +10,19 @@ ChromaDB - Store vectors locally
 Retriever - Find similar chunks
 ChatOpenAI - Generate answers
 RAG Chain - Connect everything
-Streamlit - Build UI
+fastapi - Build backend
 dotenv - Manage API keys
-@st.cache_resource - Cache for performance
+
+# Project Structure:
+```text
+RAG-Powered-Document-QA-System/
+│── main.py                 # FastAPI backend (RAG chain + API endpoints)
+│── requirements.txt        # Python dependencies
+│── chroma_db/              # Local vector database (auto-created)
+│── .env                    # Environment variables (OpenAI API key)
+│
+├── static/                 # Frontend assets
+│   └── index.html          # UI with inline CSS + JS
+│
+└── data/                   # Documents to load
+    └── Pandas Notes.pdf    # Example PDF for QA
