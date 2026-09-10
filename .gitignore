@@ -1,0 +1,8 @@
+.env
+*.pyc
+__pycache__/
+*.sqlite3
+.ipynb_checkpoints
+.vscode
+chroma_db/
+Pandas Notes.pdf
